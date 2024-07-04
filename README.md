@@ -1,6 +1,6 @@
 # aws-lambda-layer-openai
 
-This repository provides steps to create a **custom AWS Lambda layer** for the ```OpenAI``` library, including the latest version .zip file for easy deployment.
+This repository provides steps to create a **custom AWS Lambda layer** for the ```OpenAI``` library, including the latest version .zip file for direct deployment.
 
 
 ## Step 1: Create a virtual environment
