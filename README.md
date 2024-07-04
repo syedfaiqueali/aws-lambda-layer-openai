@@ -7,9 +7,14 @@ This repository provides steps to create a **custom AWS Lambda layer** for the `
 Create a Python virtual environment and activate it
 
 ```bash
+# Create the aws-lambda-layer directory and navigate into it
 mkdir aws-lambda-layer
 cd aws-lambda-layer
+
+# Create a virtual environment named 'myenv' with Python 3.10
 python3.10 -m venv myenv
+
+# Activate the virtual environment
 source ./myenv/bin/activate
 ```
 
@@ -48,13 +53,16 @@ pip install \
 deactivate
 ```
 
-## Step 5: Create a .zip file for installed packages
+## Step 5: Create a .zip file for the downloaded packages
 ```bash
+# Create the 'python' folder
 mkdir python
-cd python
-cp -r ../myenv/lib/python3.10/site-packages/* .
-cd ..
-zip -r aws-lambda-layer-openai.zip python
+
+# Copy all contents from 'package' to 'python'
+cp -r package/* python/
+
+# Zip the 'python' folder
+zip -r <zip-file-name>.zip python
 ```
 
 ## Step 6: Upload the .zip file as custom layer over aws console
