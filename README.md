@@ -14,7 +14,7 @@ source ./myenv/bin/activate
 ```
 
 ## Step 2: List your dependencies in requirements.txt
-The ```OpenAi``` Python library depends on quite a few other libraries. Make sure to list all of them in the ```requirements.txt``` file along with their desired versions. This ensures that all their built distributions are installed with respect to your targeted platform.
+The ```OpenAi``` Python library depends on quite a few other libraries. Make sure to list all of them in the ```requirements.txt``` file along with their desired versions. This ensures that all their built distributions are installed with respect to your targeted platform. Place your **requirements.txt** file inside the above directory **aws-lambda-layer**
 
 ## Step 3: Install built distributions (wheels)
 To download a wheel that’s compatible with Lambda, you use the pip --platform option.
