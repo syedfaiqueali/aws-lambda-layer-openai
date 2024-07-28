@@ -4,7 +4,7 @@ This repository provides steps to create a **custom AWS Lambda layer** for the `
 
 
 ## Step 1: Create a virtual environment
-Create a Python virtual environment and activate it
+Create a Python virtual environment and activate it.
 
 ```bash
 # Create the aws-lambda-layer directory and navigate into it
